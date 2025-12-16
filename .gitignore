@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# UV
+.uv/
+uv.lock
+
+# Data files (large raw data files)
+data/raw/*.txt
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# Large data files in root (should not be committed)
+household_power_consumption.txt
+*.txt
+!README.txt
+!LICENSE.txt
+
+# Environment
+.env
+.venv
+venv/
+ENV/
+
+# Security keys (never commit!)
+*.pem
+*.key
+*.p12
+*.pfx
+env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Jupyter (should not exist, but just in case)
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Reports (keep structure but ignore large HTML files if needed)
+# reports/drift/*.html
+

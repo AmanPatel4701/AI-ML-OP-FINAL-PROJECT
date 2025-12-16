@@ -1,0 +1,30 @@
+[project]
+name = "household-electricity-forecasting-mlops"
+version = "0.1.0"
+description = "MLOps project for household electricity consumption forecasting"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "xgboost>=2.0.0",
+    "h2o>=3.44.0",
+    "mlflow>=2.8.0",
+    "boto3>=1.28.0",
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.5.0",
+    "evidently>=0.4.0",
+    "plotly>=5.17.0",
+    "psycopg2-binary>=2.9.0",
+    "python-multipart>=0.0.6",
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app", "scripts"]
+
